@@ -1,0 +1,12 @@
+{% if persons %}
+    <ul>
+        {% for person in persons %}
+            <li>Name: {{person.first_name}} {{person.last_name}}</li>
+            <li>Email: {{person.email}}</li>
+            <li>User: {{person.user_name}}</li>
+        <hr>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No persons are available.</p>
+{% endif %}
